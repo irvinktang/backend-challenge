@@ -56,7 +56,7 @@ Both shipments and products have a `company_id` (belong to a company).
 The shipment_products table is a join table that connects shipments and products, and thus has both a `product_id` and `company_id`.
 
 ```
-glexport_development=# \d+ companies
+hexport_development=# \d+ companies
 Table "public.companies"
    Column   |            Type
 ------------+-----------------------------
@@ -65,7 +65,7 @@ Table "public.companies"
  created_at | timestamp without time zone
  updated_at | timestamp without time zone
 
-glexport_development=# \d+ shipments
+hexport_development=# \d+ shipments
 Table "public.shipments"
               Column               |            Type
 -----------------------------------+-----------------------------
@@ -77,7 +77,7 @@ Table "public.shipments"
  created_at                        | timestamp without time zone
  updated_at                        | timestamp without time zone
 
-glexport_development=# \d+ products
+hexport_development=# \d+ products
 Table "public.products"
    Column    |            Type
 -------------+-----------------------------
@@ -88,7 +88,7 @@ Table "public.products"
  created_at  | timestamp without time zone
  updated_at  | timestamp without time zone
 
-glexport_development=# \d+ shipment_products
+hexport_development=# \d+ shipment_products
 Table "public.shipment_products"
    Column    |            Type
 -------------+-----------------------------
