@@ -16,8 +16,8 @@ Instructions
   1. Navigate to the project root
   2. Modify `spec/config.rb` if necessary
   3. Install ruby if necessary
-  4. Install the `bundler` gem if necessary
-  5. Run `bundle install`
+  4. Install the `bundler` gem if necessary (ex. gem install bundler)
+  5. Run `bundle install` (similiar to npm install)
   6. Make sure your application server is running
 4. Run `bundle exec rspec` until specs pass
 
