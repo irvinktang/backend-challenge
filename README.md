@@ -45,7 +45,7 @@ The desired output as defined in the "contents of a single record" section delib
 The Database and Schema
 -----------------------
 
-The sample database provided consists of four tables:
+The sample csv files provided consists of four tables:
 - companies
 - shipments
 - products
@@ -56,8 +56,7 @@ Both shipments and products have a `company_id` (belong to a company).
 The shipment_products table is a join table that connects shipments and products, and thus has both a `product_id` and `company_id`.
 
 ```
-hexport_development=# \d+ companies
-Table "public.companies"
+Table "companies"
    Column   |            Type
 ------------+-----------------------------
  id         | integer
@@ -65,8 +64,7 @@ Table "public.companies"
  created_at | timestamp without time zone
  updated_at | timestamp without time zone
 
-hexport_development=# \d+ shipments
-Table "public.shipments"
+Table "shipments"
               Column               |            Type
 -----------------------------------+-----------------------------
  id                                | integer
@@ -77,8 +75,7 @@ Table "public.shipments"
  created_at                        | timestamp without time zone
  updated_at                        | timestamp without time zone
 
-hexport_development=# \d+ products
-Table "public.products"
+Table "products"
    Column    |            Type
 -------------+-----------------------------
  id          | integer
@@ -88,8 +85,7 @@ Table "public.products"
  created_at  | timestamp without time zone
  updated_at  | timestamp without time zone
 
-hexport_development=# \d+ shipment_products
-Table "public.shipment_products"
+Table "shipment_products"
    Column    |            Type
 -------------+-----------------------------
  id          | integer
