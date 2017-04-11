@@ -40,6 +40,8 @@ After resetting the database, the [rspec test](https://github.com/horizons-schoo
 - Pagination
 - Error Handling
 
+Hint: For Pagination - instead of using another database, just create your own CSV file
+
 The desired output as defined in the "contents of a single record" section deliberately contains some questionable implementation choices. Please accommodate the desired output and we can discuss the pros and cons of the given json structure.
 
 The Database and Schema
