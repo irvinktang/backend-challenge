@@ -62,7 +62,7 @@ RSpec.describe "api/v1/shipments resouces" do
             expect(response.status).to eq(HTTP_SUCCESS)
             json = JSON.parse(response.body)
             # Uncomment below to output the response json in your shell
-            # puts JSON.pretty_generate(json)
+            puts JSON.pretty_generate(json)
             expect(json['records'].map { |shipment_json| shipment_json['name'] }).to include('yalmart apparel from china')
           end
         end
